@@ -31,6 +31,11 @@ namespace RecodedMusicPlayer.Models
         {
             return _musicLibrary.GetMusicByIndex(Index);
         }
+        
+        public MusicFile GetMusicFileByTitle(string title)
+        {
+            return _musicLibrary.GetMusicByTitle(title);
+        }
 
         public MusicFile GetMusicByRandom()
         {
