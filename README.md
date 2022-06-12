@@ -18,7 +18,7 @@ A Music Player coded in WPF with MVVM design pattern.
 ## Usage
 
 ### General Stuff
-Songs are Loaded from /User/Music's Folder and are being added to the music library.</br>
+Songs are Loaded from /User/Music's Folder and being added to the music library.</br>
 Songs are downloaded with youtube dl, there will be a .exe file in the releases folder I recommend to update it.</br>
 
 ### Main Page
