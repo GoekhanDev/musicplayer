@@ -23,7 +23,7 @@ Songs are downloaded with youtube dl, there will be a .exe file in the releases 
 
 ### Main Page
 
-Mainpage gives you selection of song, a search option and a clear view of what song is playing.</br>
+Mainpage gives you a selection of songs, a search option and a clear view of what song is playing.</br>
 Underneath the mainpage are the controls like any other music player start, pause, forward, backward, set duration, set volume.
 
 ### Download Page
