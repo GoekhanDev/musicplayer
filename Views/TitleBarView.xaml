@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="RecodedMusicPlayer.Views.titleBarView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:fa="http://schemas.fontawesome.io/icons/" 
+             xmlns:viewmodels="clr-namespace:RecodedMusicPlayer.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:TitleBarViewModel}"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" MaxHeight="30"
+             >
+    <Grid>
+        <Grid VerticalAlignment="Top" x:Name="TitleBar" Panel.ZIndex="3" Background="Transparent">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition MaxWidth="90"/>
+            </Grid.ColumnDefinitions>
+
+            <Rectangle Fill="Transparent"  Panel.ZIndex="3" MouseLeftButtonDown="WindowDrag"/>
+
+            <StackPanel Height="30" Grid.Column="1" WindowChrome.IsHitTestVisibleInChrome="True"
+                        VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal">
+
+                <!--Command Parameter Source: https://stackoverflow.com/a/3504631-->
+
+                <Button Width="30" Style="{StaticResource TransparentStyle}" x:Name="minimize" Command="{Binding MinimizeWindowCommand}"
+                        CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Window}}}">
+                    <StackPanel VerticalAlignment="Center">
+                        <fa:ImageAwesome Width="10" Foreground="White" Icon="WindowMinimize"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Width="30" Style="{StaticResource TransparentStyle}"  Command="{Binding MaximizeWindowCommand}"
+                        CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Window}}}">
+                    <StackPanel VerticalAlignment="Center">
+                        <fa:ImageAwesome Width="10" Foreground="White" Icon="WindowMaximize"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Width="30" Style="{StaticResource TransparentStyle}" Command="{Binding CloseWindowCommand}" 
+                        CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Window}}}">
+                    <StackPanel VerticalAlignment="Center">
+                        <fa:ImageAwesome Width="10" Foreground="White" Icon="Remove"/>
+                    </StackPanel>
+                </Button>
+
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

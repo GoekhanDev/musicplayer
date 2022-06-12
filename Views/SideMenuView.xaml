@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="RecodedMusicPlayer.Views.sideMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RecodedMusicPlayer.Views" xmlns:fa="http://schemas.fontawesome.io/icons/" xmlns:viewmodels="clr-namespace:RecodedMusicPlayer.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:PlayerControlsViewModel}"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="200">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Width="200" MaxWidth="200" Background="#191a1f" Grid.Row="0" Panel.ZIndex="1">
+
+            <Grid.RowDefinitions>
+                <RowDefinition MinHeight="150"/>
+                <RowDefinition MaxHeight="190"/>
+            </Grid.RowDefinitions>
+
+            <ScrollViewer>
+
+                <StackPanel Margin="20">
+
+                    <Button Margin="0 10 0 30" Style="{StaticResource DisabledButton}" Background="Transparent" x:Name="settingsBTN">
+                        <StackPanel Orientation="Horizontal" Opacity="0.2" Width="150">
+                            <fa:ImageAwesome Width="25" Foreground="White" Icon="EllipsisH"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button Margin="0 10 0 10" Style="{StaticResource DisabledButton}" Background="Transparent" x:Name="homePageBTN"
+                            Command="{Binding MainPageCommand}" Opacity="{Binding MainPageBTNOpacity}">
+                        <StackPanel Orientation="Horizontal" Width="150">
+                            <fa:ImageAwesome Width="23" Foreground="White" Icon="Music"/>
+                            <TextBlock Margin="10 0 0 0" Text="Songs" Foreground="White" FontSize="15"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button Margin="0 10 0 10" Style="{StaticResource DisabledButton}" Background="Transparent" x:Name="downloadPageTN"
+                            Command="{Binding DownloaderCommand}" Opacity="{Binding DownloadBTNOpacity}">
+                        <StackPanel Orientation="Horizontal" Width="150">
+                            <fa:ImageAwesome Width="23" Foreground="White" Icon="Download" />
+                            <TextBlock Margin="10 0 0 0" Text="Downloader" Foreground="White" FontSize="15"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Rectangle Margin="0 20 0 0" Fill="White" Height="1" Opacity="0.1"/>
+
+                </StackPanel>
+            </ScrollViewer>
+
+            <Rectangle HorizontalAlignment="Right" Grid.RowSpan="2" Panel.ZIndex="1" Width="1" Fill="White" Opacity="0.1"></Rectangle>
+            
+            
+
+        </Grid>
+    </Grid>
+</UserControl>

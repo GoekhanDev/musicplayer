@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RecodedMusicPlayer.App" Collapsed="true">
+    <Position X="33" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAEAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAIAAEAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="34.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="RecodedMusicPlayer.Commands.CommandBase" Collapsed="true">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAACAAQAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\CommandBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RecodedMusicPlayer.Commands.ListViewSelectMusicCommand" Collapsed="true">
+    <Position X="14.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Commands\MainPageCommands\ListViewSelectMusicCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Commands.NavigateCommand" Collapsed="true">
+    <Position X="19.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Commands\NavigateCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Commands.PlayerControlsCommands.BackwardMusicCommand" Collapsed="true">
+    <Position X="23.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\PlayerControlsCommands\BackwardMusicCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Commands.PlayerControlsCommands.DurationUpdateCommand" Collapsed="true">
+    <Position X="28.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAEAgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\PlayerControlsCommands\DurationUpdateCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Commands.PlayerControlsCommands.ForwardMusicCommand" Collapsed="true">
+    <Position X="1.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\PlayerControlsCommands\ForwardMusicCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Commands.PlayerControlsCommands.PauseMusicCommand" Collapsed="true">
+    <Position X="5.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAgAAAAAAAAAQAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\PlayerControlsCommands\PauseMusicCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Commands.PlayerControlsCommands.PlayMusicCommand" Collapsed="true">
+    <Position X="10.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\PlayerControlsCommands\PlayMusicCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Commands.PlayerControlsCommands.SetMusicCommand" Collapsed="true">
+    <Position X="17" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\PlayerControlsCommands\SetMusicCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Commands.PlayerControlsCommands.StopMusicCommand" Collapsed="true">
+    <Position X="21.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAgAAAAAAAAAQAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\PlayerControlsCommands\StopMusicCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Commands.SideMenuCommands.DownloadPageCommand" Collapsed="true">
+    <Position X="26" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAQAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Commands\SideMenuCommands\DownloadPageCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Commands.SideMenuCommands.MainPageCommand" Collapsed="true">
+    <Position X="30.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQIAAAAAAAAQAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Commands\SideMenuCommands\MainPageCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Commands.TitleBarCommands.CloseWindowCommand" Collapsed="true">
+    <Position X="3.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\TitleBarCommands\CloseWindowCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Commands.TitleBarCommands.MaximizeWindowCommand" Collapsed="true">
+    <Position X="8" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\TitleBarCommands\MaximizeWindowCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Commands.TitleBarCommands.MinimizeWindowCommand" Collapsed="true">
+    <Position X="12.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\TitleBarCommands\MinimizeWindowCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Models.MusicConflictException" Collapsed="true">
+    <Position X="36.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\MusicConflictException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Models.CustomSlider" Collapsed="true">
+    <Position X="34.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAQAAAAAA=</HashCode>
+      <FileName>Models\Custom Controls\CustomSlider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Models.Downloader" Collapsed="true">
+    <Position X="36.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Downloader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Models.FileWatcher" Collapsed="true">
+    <Position X="40" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\FileWatcher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Models.MusicControls" Collapsed="true">
+    <Position X="38.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAIAAAAAAAIAAAAAAAAAACAACgAAAAAAAAgAAAICA=</HashCode>
+      <FileName>Models\MusicRelated\MusicControls.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Models.MusicFile" Collapsed="true">
+    <Position X="40" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAQAAAAAAAAQAAAAAAAAAAAEgAIAABAABBAAA=</HashCode>
+      <FileName>Models\MusicRelated\MusicFilecs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Models.MusicLibrary" Collapsed="true">
+    <Position X="33" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAoAACAAAAIAAAAAAIAAAAAQAAAAAQAAAAAAAAAAAE=</HashCode>
+      <FileName>Models\MusicRelated\MusicLibrary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Models.MusicPlayer" Collapsed="true">
+    <Position X="34.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAgAAICAhAACAAAIECCAAAgAAAAAAIIBIEICAAQAACE=</HashCode>
+      <FileName>Models\MusicRelated\MusicPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Models.PlayerControls" Collapsed="true">
+    <Position X="38.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAIAAgAAAAAAACgIgAAAAAAAAAAKCA=</HashCode>
+      <FileName>Models\MusicRelated\PlayerControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Models.Soudcloud" Collapsed="true">
+    <Position X="38.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Soundcloud\Soudcloud.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Models.TitleBar" Collapsed="true">
+    <Position X="40" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\TitleBar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Models.Page_Models.TrackModel" Collapsed="true">
+    <Position X="34.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Page Models\TrackModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Properties.Resources" Collapsed="true">
+    <Position X="33" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Properties.Settings" Collapsed="true">
+    <Position X="34.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Stores.NavigationStore" Collapsed="true">
+    <Position X="36.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgIEAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Stores\NavigationStore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.ViewModels.PlayerControlsViewModel" Collapsed="true">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACACCACAAMEARgAAACAQAEAAACAAAAAgBBgFEphAAE=</HashCode>
+      <FileName>ViewModels\Controls\PlayerControlsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.ViewModels.SideMenuViewModel" Collapsed="true">
+    <Position X="9.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAACAAAAAAAAAQAAAAAAAAAAAAAAAAAAQBAAAAI=</HashCode>
+      <FileName>ViewModels\Controls\SideMenuViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.ViewModels.MainViewModel" Collapsed="true">
+    <Position X="11.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIEAAAAAAAAAAAAAAAAAAAAAAAEABAAA=</HashCode>
+      <FileName>ViewModels\MainViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.ViewModels.DownloaderViewModel" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAASAAAAAAAAAAAgAAAAIAABAAAgAAIAAA=</HashCode>
+      <FileName>ViewModels\Pages\DownloaderViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.ViewModels.MainPageViewModel" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAASAAIAACMAIIAAAAAAIAChEAAgAiAAAA=</HashCode>
+      <FileName>ViewModels\Pages\MainPageViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.ViewModels.TitleBarViewModel" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAACAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\TitleBarViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.ViewModels.ViewModelBase" Collapsed="true">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ViewModelBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RecodedMusicPlayer.Views.DownloaderView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="38.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQgAAAAAAAAgAAAAAAACCATAAAAAwAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\DownloaderView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecodedMusicPlayer.Views.MainPageView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQgAAAAAAAAgAAAAAAACCATAAAAAwAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\MainPageView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="RecodedMusicPlayer.Views.playerMenu" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="40" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Views\PlayerControlsView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="RecodedMusicPlayer.Views.sideMenu" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="36.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\SideMenuView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="RecodedMusicPlayer.Views.titleBarView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAIAAAAAAAQQAA=</HashCode>
+      <FileName>Views\TitleBarView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

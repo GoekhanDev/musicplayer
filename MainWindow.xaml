@@ -1,0 +1,47 @@
+﻿<Window x:Class="RecodedMusicPlayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:views="clr-namespace:RecodedMusicPlayer.Views"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RecodedMusicPlayer"
+        xmlns:vms="clr-namespace:RecodedMusicPlayer.ViewModels" d:DataContext="{d:DesignInstance Type=vms:MainViewModel}"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanResize"
+        BorderThickness="0"
+        BorderBrush="Transparent"
+        WindowState="Normal"
+        Background="#1b1c22"
+        Title="MusicPlayer" MinHeight="500" MinWidth="850" Height="424" Width="739">
+
+    <WindowChrome.WindowChrome>
+        <WindowChrome     
+            CaptionHeight="1"  
+            CornerRadius ="0"
+            ResizeBorderThickness="5"         
+            GlassFrameThickness="0">
+        </WindowChrome>
+    </WindowChrome.WindowChrome>
+
+    <Grid>
+
+        <Grid.Resources>
+            <DataTemplate DataType="{x:Type vms:MainPageViewModel}">
+                <views:MainPageView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vms:DownloaderViewModel}">
+                <views:DownloaderView/>
+            </DataTemplate>
+        </Grid.Resources>
+
+        <ContentControl Content="{Binding CurrentViewModel}"/>
+
+        <views:sideMenu Panel.ZIndex="0"/>
+        <views:playerMenu Panel.ZIndex="1" VerticalAlignment="Bottom"/>
+        <views:titleBarView Panel.ZIndex="2" VerticalAlignment="Top"/> 
+        
+    </Grid>
+    
+</Window>
