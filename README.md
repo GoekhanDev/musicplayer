@@ -26,7 +26,6 @@ Main Page
 
 Mainpage gives you selection of song, a search option and a clear view of what song is playing.</br>
 Underneath the mainpage are the controls like any other music player start, pause, forward, backward, set duration, set volume.
-Download Page
 
 ### Download Page
 
