@@ -92,16 +92,14 @@ namespace RecodedMusicPlayer.Models
         {
             Process p = new Process();
 
-            string path = String.Format(@"C:\Users\{0}\Music\{1}.mp3", Environment.UserName, song.title);
-
-            p.StartInfo = new ProcessStartInfo("youtube-dl.exe", song.permalink.ToString() + " --embed-thumbnail --add-metadata --postprocessor-args \"-metadata artist=Soundcloud\" -o "+ path);
+            p.StartInfo = new ProcessStartInfo("youtube-dl.exe", song.permalink.ToString() + " --embed-thumbnail --add-metadata --postprocessor-args \"-metadata artist=Soundcloud\" -o %USERPROFILE%/Music/%(title)s.%(ext)s");
             p.StartInfo.CreateNoWindow = true;
             p.StartInfo.UseShellExecute = false;
             p.Start();
 
             p.WaitForExit();
 
-            return path;
+            return String.Format(@"C:\Users\{0}\Music\{1}.mp3", Environment.UserName, song.title);
         }
     }
 }
