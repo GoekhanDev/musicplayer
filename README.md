@@ -35,7 +35,3 @@ Every result is listed in a list and with a mouse hover and a click the selected
 After the download it will be added to the current music list and will be stored locally at your Musics folder with all the metadata.
 
 </br>
-
-## About the Project
-
-The code is written in WPF with MVVM design pattern, pull requests are accepted since code isn't clean.
