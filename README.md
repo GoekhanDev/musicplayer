@@ -1,5 +1,5 @@
 # musicplayer
-A Music Player coded in WPF with MVVM design pattern
+A Music Player coded in WPF with MVVM design pattern.
 
 </br>
 
