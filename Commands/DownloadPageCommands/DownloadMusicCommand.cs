@@ -46,7 +46,8 @@ namespace RecodedMusicPlayer.Commands.DownloadPageCommands
         private void worker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             int index = _musicplayer.GetMusicList().LastOrDefault().index;
-            App._musicplayer.AddMusicToLibrary(new MusicFile(path, index + 1));
+            if (App._musicplayer.GetMusicFileByTitle(song.title) == null)
+                App._musicplayer.AddMusicToLibrary(new MusicFile(path, index + 1));
         }
     }
 
