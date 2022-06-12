@@ -36,6 +36,11 @@ namespace RecodedMusicPlayer.Models
         {
             return _musicFiles.Where(x => x.index == Index).FirstOrDefault();
         }
+        
+        public MusicFile GetMusicByTitle(string title)
+        {
+            return _musicFiles.Where(x => x.title == title).FirstOrDefault();
+        }
 
         public MusicFile GetRandomMusic()
         {
